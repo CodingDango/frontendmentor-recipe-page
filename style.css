@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--stone600);
 }
 
 body {
@@ -44,6 +45,7 @@ main {
 .recipe__header__h1 {
     font-size: 30px;
     font-family: "Young Serif", Times;
+    color: var(--stone900);
 }
 
 .recipe__ingredients-section__h2,
@@ -51,6 +53,7 @@ main {
 .recipe__nutrition-section__h2 {
     font-size: 25px;
     font-family: "Young Serif", Times;
+    color: var(--brown800);
 }
 
 
@@ -70,7 +73,7 @@ main {
 .recipe__header {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .recipe__header__img {
@@ -80,7 +83,6 @@ main {
 }
 
 /* Recipe Aside */
-
 .recipe__prep-aside {
     background-color: var(--rose50);
     border-radius: inherit;
@@ -98,13 +100,36 @@ main {
 
 .recipe__prep-aside ul {
     margin-left: 1rem;
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+.recipe__prep-aside li::marker {
+    color: var(--rose800);
+}
+
 .recipe__prep-aside li::before {
     content: "";
     margin-right: 1rem;
+}
+
+/* Ingredients Section */
+
+.recipe__ingredients-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.recipe__ingredients-section ul {
+    margin-left: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recipe__ingredients-section li::marker {
+    color: var(--brown800);
 }
