@@ -12,6 +12,9 @@
     --rose50: hsl(330, 100%, 98%);
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 /* Young Serif Font Family */
 /* Outfit Font Family */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900');
@@ -42,6 +45,10 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+footer {
+    padding: 1rem;
 }
 
 .recipe__header__h1,
